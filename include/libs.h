@@ -12,9 +12,17 @@
 #include <time.h>
 
 // GL
-#include <GL/glut.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+
+#ifdef _MINGW32_
+#include <windows.h>
+#include <GL/freeglut.h>
+#endif
+
+#ifdef linux
+#include <GL/glut.h>
+#endif
 
 // using
 using namespace std;
@@ -23,5 +31,3 @@ using namespace std;
 
 // Constants
 const double C_TMS = 42; // Timer Milliseconds
-
-////// hhjhj#pragma hdrstop
