@@ -1,10 +1,8 @@
 CC=g++
-ifeq ($(OS),Windows_NT)
-	FLAGS=-lfreeglut -lopengl32 -lglu32 -m32
-else
-	FLAGS=-lX11 -lXi -lXmu -lglut -lGL -lGLU -lm
-endif
-IDIR=include
 
-all:
-	$(CC) $(FLAGS) src/main.cpp -I$(IDIR) -o build/oballtus
+linux:
+	g++ -lX11 -lXi -lXmu -lglut -lGL -lGLU -lm  src/main.cpp -Iinclude -o build/oballtus -std=c++0x
+
+windows:
+	i686-w64-mingw32-g++ src/main.cpp -lopengl32 -lglu32 -lfreeglut -m32 -Iinclude -o build/oballtus.exe -std=c++0x
+

@@ -14,15 +14,7 @@
 // GL
 #include <GL/gl.h>
 #include <GL/glu.h>
-
-#ifdef _MINGW32_
-#include <windows.h>
-#include <GL/freeglut.h>
-#endif
-
-#ifdef linux
 #include <GL/glut.h>
-#endif
 
 // using
 using namespace std;
