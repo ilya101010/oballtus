@@ -1,0 +1,20 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "Linux",
+			"shell_cmd": "make linux"
+		},
+		{
+			"name": "Windows",
+			"shell_cmd": "make windows"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

@@ -1,0 +1,582 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"only",
+				"onlymytextbox"
+			],
+			[
+				"let",
+				"left_layout"
+			],
+			[
+				"stsr",
+				"systray"
+			],
+			[
+				"eleme",
+				"element"
+			],
+			[
+				"Set",
+				"SetProjection"
+			],
+			[
+				"X",
+				"X0"
+			],
+			[
+				"S",
+				"SetViewport"
+			],
+			[
+				"e",
+				"element"
+			],
+			[
+				"ob",
+				"Objects"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"glC",
+				"glColor3f"
+			],
+			[
+				"Re",
+				"ReSize"
+			],
+			[
+				"Res",
+				"ReSizeGLScene"
+			],
+			[
+				"Scene",
+				"Scene3D"
+			],
+			[
+				"ce",
+				"centerZ"
+			],
+			[
+				"eye",
+				"eyeZ"
+			],
+			[
+				"Eye",
+				"eyeZ"
+			],
+			[
+				"center",
+				"centerZ"
+			],
+			[
+				"mod",
+				"Model1"
+			],
+			[
+				"Model",
+				"Model1"
+			],
+			[
+				"_",
+				"_inited"
+			],
+			[
+				"double",
+				"double"
+			],
+			[
+				"p",
+				"public"
+			],
+			[
+				"tr",
+				"trees"
+			],
+			[
+				"Tim",
+				"TimeFunc"
+			],
+			[
+				"draw",
+				"DrawGL"
+			],
+			[
+				"glVe",
+				"glVertex2d"
+			],
+			[
+				"get",
+				"getLine"
+			],
+			[
+				"I",
+				"IElement"
+			],
+			[
+				"max",
+				"MAX_IT"
+			],
+			[
+				"doble",
+				"double"
+			],
+			[
+				"DrawG",
+				"DrawGL"
+			],
+			[
+				"gl",
+				"glEnd"
+			],
+			[
+				"Dr",
+				"DrawGL"
+			],
+			[
+				"z",
+				"z"
+			],
+			[
+				"drw",
+				"DrawGL"
+			],
+			[
+				"cen",
+				"centerX"
+			],
+			[
+				"ai",
+				"ai"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"set",
+				"setBoss"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"x",
+				"X"
+			],
+			[
+				"Y",
+				"Y"
+			],
+			[
+				"SDL_",
+				"SDL_WINDOWPOS_UNDEFINED"
+			],
+			[
+				"mi",
+				"minD"
+			],
+			[
+				"i",
+				"iCoords"
+			],
+			[
+				"myte",
+				"mytextbox"
+			],
+			[
+				"no",
+				"notify"
+			],
+			[
+				"glut",
+				"glutInit"
+			],
+			[
+				"a",
+				"argc"
+			],
+			[
+				"inc",
+				"include"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "include/ball.h",
+			"settings":
+			{
+				"buffer_size": 933,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Pro",
+				"Project: Save As"
+			],
+			[
+				"Proje",
+				"Project: Add Folder"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/ilya101010/Documents/ENGLISH/money",
+		"/home/ilya101010/Documents/ENGLISH/English",
+		"/home/ilya101010/calltree.sh",
+		"/home/ilya101010/.vimrc",
+		"/home/ilya101010/Programming/oballtus/.git/config",
+		"/home/ilya101010/Programming/Projects/Ball/universe.h",
+		"/home/ilya101010/Programming/Projects/Ball/Ball/universe.h",
+		"/home/ilya101010/Downloads/Внутри разума Леонардо/ss.ass",
+		"/home/ilya101010/Downloads/Внутри разума Леонардо/Inside the mind of Leonardo.ass.srt",
+		"/home/ilya101010/Downloads/Внутри разума Леонардо/Inside the mind of Leonardo.srt",
+		"/home/ilya101010/Downloads/Внутри разума Леонардо/Inside the mind of Leonardo.ass",
+		"/home/ilya101010/dalek.sh",
+		"/home/ilya101010/Documents/test.html",
+		"/home/ilya101010/Documents/ENGLISH/AnotherLetter",
+		"/home/ilya101010/joomlabrute.py",
+		"/home/ilya101010/Programming/scaryIPrintable.cpp",
+		"/home/ilya101010/Documents/Стихи/Мышлять",
+		"/home/ilya101010/Documents/Стихи/21-ый век",
+		"/home/ilya101010/Documents/Стихи/Разные",
+		"/home/ilya101010/Documents/Николай Михайлович Карамзин (1766-1826)",
+		"/home/ilya101010/Programming/zaoch/a.cpp",
+		"/home/ilya101010/Documents/Стихи/Я слышал, где-то вдалеке идёт война.",
+		"/home/ilya101010/Documents/ломоносов",
+		"/home/ilya101010/Documents/Стихи/Неправильно",
+		"/home/ilya101010/Programming/Projects/Ball/plan",
+		"/home/ilya101010/Documents/Стихи/Задачи",
+		"/home/ilya101010/Documents/Стихи/Тропа",
+		"/home/ilya101010/Documents/Стихи/Поиск",
+		"/home/ilya101010/Documents/Стихи/О род людской! Что с тобою сотряслось?",
+		"/home/ilya101010/Programming/Projects/build-Ball-Desktop-Release/test",
+		"/home/ilya101010/.muttrc",
+		"/home/ilya101010/Documents/Стихи/Поход",
+		"/home/ilya101010/Documents/English",
+		"/home/ilya101010/Programming/OpenGL/build-Ball4-Desktop-Debug/Ball4",
+		"/home/ilya101010/Programming/OpenGL/Ball4/a.out",
+		"/home/ilya101010/Documents/АлександрI.md",
+		"/home/ilya101010/Documents/Basketball",
+		"/home/ilya101010/Documents/ИСказалЕвклид",
+		"/home/ilya101010/Documents/Квадрат",
+		"/home/ilya101010/Documents/Стихи/Звёзды",
+		"/home/ilya101010/bbcone",
+		"/home/ilya101010/Programming/OpenGL/ball/model.h",
+		"/home/ilya101010/Programming/OpenGL/ball/ui.h",
+		"/home/ilya101010/a1.h",
+		"/home/ilya101010/Programming/OpenGL/triangle.cpp",
+		"/home/ilya101010/Programming/OpenGL/ball/triangle.h",
+		"/home/ilya101010/Documents/VMSH.3",
+		"/home/ilya101010/Programming/OpenGL/points_the_future.cpp",
+		"/home/ilya101010/Programming/OpenGL/triangle2.cpp",
+		"/home/ilya101010/Programming/OpenGL/res",
+		"/home/ilya101010/Programming/lb.example.cpp",
+		"/home/ilya101010/dddddd",
+		"/home/ilya101010/Programming/OpenGL/lesson5.cpp",
+		"/home/ilya101010/.config/awesome/rc.lua",
+		"/home/ilya101010/Programming/OpenGL/doska.cpp",
+		"/home/ilya101010/Programming/OpenGL/makefile",
+		"/home/ilya101010/Programming/own/uchu/dict/english.dict.json",
+		"/home/ilya101010/Programming/codeforces/r266/a.cpp",
+		"/home/ilya101010/Programming/codeforces/r266/e.cpp",
+		"/home/ilya101010/.xinitrc",
+		"/home/ilya101010/Programming/codeforces/r266/b.cpp",
+		"/home/ilya101010/Programming/codeforces/own/378b.cpp",
+		"/home/ilya101010/Programming/codeforces/own/test",
+		"/home/ilya101010/Documents/TheUmbrella-Retelling",
+		"/home/ilya101010/Programming/codeforces/own/465b.cpp",
+		"/home/ilya101010/Programming/codeforces/r266/test",
+		"/home/ilya101010/Documents/Сочинения/Национализм.md",
+		"/home/ilya101010/Programming/mine/pi.cpp",
+		"/home/ilya101010/Programming/codeforces/r263/a.cpp",
+		"/home/ilya101010/Programming/codeforces/r225/a.cpp",
+		"/home/ilya101010/Programming/codeforces/own/462a.cpp",
+		"/home/ilya101010/Programming/codeforces/own/462b1.cpp",
+		"/home/ilya101010/Programming/d1967.cpp",
+		"/home/ilya101010/Documents/reading_diary.xml",
+		"/home/ilya101010/Programming/test",
+		"/home/ilya101010/Documents/Школа/Planeta_Ludey-SentEkzuperi/text.md",
+		"/home/ilya101010/Programming/codeforces/r263/aa.cpp",
+		"/home/ilya101010/Programming/codeforces/r263/b.cpp",
+		"/home/ilya101010/Programming/c7.cpp",
+		"/home/ilya101010/Matematika/Zadaniya/imo",
+		"/home/ilya101010/Matematika/Zadaniya/geometr-progress",
+		"/home/ilya101010/tv.vlc",
+		"/home/ilya101010/arifm-geometr-progress",
+		"/home/ilya101010/Downloads/Ad-user-create.ps1",
+		"/home/ilya101010/Programming/dijkstra-algorithm",
+		"/home/ilya101010/Programming/DJ.txt",
+		"/home/ilya101010/.conkyrc",
+		"/home/ilya101010/fbtest.cpp",
+		"/home/ilya101010/Programming/codeforces/r_codecup_2014/c.cpp",
+		"/home/ilya101010/Programming/3494.cpp",
+		"/home/ilya101010/Programming/i1415.cpp",
+		"/home/ilya101010/Programming/d330.cpp",
+		"/home/ilya101010/Programming/SDL/test/a.cpp",
+		"/home/ilya101010/Matematika/Zadaniya/arifm-progress",
+		"/home/ilya101010/Matematika/Zadaniya/olimp",
+		"/home/ilya101010/Programming/codeforces/r_codecup_2014/a.cpp",
+		"/home/ilya101010/Programming/codeforces/r_codecup_2014/b.cpp",
+		"/home/ilya101010/Programming/a+9d",
+		"/home/ilya101010/Programming/ncurses.cpp",
+		"/home/ilya101010/Programming/j200.cpp",
+		"/home/ilya101010/Programming/a6.cpp",
+		"/home/ilya101010/Programming/i658.cpp",
+		"/home/ilya101010/.config/sublime-text-3/Packages/User/ZenTabs.sublime-settings",
+		"/home/ilya101010/.config/sublime-text-3/Packages/Zen Tabs/TODO.todo",
+		"/home/ilya101010/.bashrc",
+		"/home/ilya101010/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/ilya101010/.config/awesome/theme/theme.lua",
+		"/home/ilya101010/.config/termite/config",
+		"/home/ilya101010/Programming/doli.cpp",
+		"/home/ilya101010/Programming/b98.cpp",
+		"/home/ilya101010/.config/sublime-text-3/Packages/Zen Tabs/ZenTabs.sublime-settings",
+		"/home/ilya101010/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/ilya101010/Programming/a98.cpp",
+		"/home/ilya101010/.profile",
+		"/home/ilya101010/Programming/d3570.cpp",
+		"/home/ilya101010/Programming/b154.cpp",
+		"/home/ilya101010/Programming/k3050.cpp",
+		"/home/ilya101010/opengl.cpp",
+		"/home/ilya101010/archimed",
+		"/home/ilya101010/test.rc.lua",
+		"/home/ilya101010/.config/awesome/rc2lua",
+		"/home/ilya101010/.config/compton.conf",
+		"/home/ilya101010/.config/compton",
+		"/home/ilya101010/pipes.sh",
+		"/home/ilya101010/.config/awesome/theme/taglist/squarefw.png",
+		"/home/ilya101010/Programming/pe1.cpp",
+		"/home/ilya101010/Programming/pe7.cpp",
+		"/home/ilya101010/Programming/pe15.cpp"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rules",
+			"c.",
+			"vain",
+			"mytextclock",
+			"widget",
+			"curb",
+			"concern",
+			"дюны",
+			"occur",
+			"curb",
+			"occur",
+			">\n",
+			"setwindow",
+			"ax",
+			" r",
+			"float",
+			"ratioD",
+			"naughty]\\",
+			"naughty",
+			"<)",
+			"1",
+			"mywibox",
+			"beautiful.",
+			"layout",
+			"naughty",
+			"menu",
+			"xter",
+			"awesome",
+			"][",
+			"a",
+			"tabs",
+			"home",
+			"titlebar",
+			"dbus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "include/ball.h",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "c++",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "oballtus.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

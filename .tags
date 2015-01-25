@@ -1,0 +1,176 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Add	include/universe.h	/^        void Add(Object* obj)$/;"	f	class:GLIZ::IUniverse
+Animate	include/scene.h	/^        void Animate()$/;"	f	class:GLIZ::Scene2d
+AttachUniverse	include/ui.h	/^        void AttachUniverse(int scene_i, IUniverse* universe)$/;"	f	class:GLIZ::UI
+Ball	include/ball.h	/^        Ball()$/;"	f	class:GLIZ::Ball
+Ball	include/ball.h	/^    class Ball: public Object$/;"	c	namespace:GLIZ
+BallR	include/borders.h	/^        double BallR()$/;"	f	class:GLIZ::Borders
+BaseScene	include/scene.h	/^        BaseScene() {}$/;"	f	class:GLIZ::BaseScene
+BaseScene	include/scene.h	/^    class BaseScene: public IScene$/;"	c	namespace:GLIZ
+Borders	include/borders.h	/^        Borders() {Movable = false; element=new Model(); br=-1;}$/;"	f	class:GLIZ::Borders
+Borders	include/borders.h	/^    class Borders : public Object$/;"	c	namespace:GLIZ
+CC	makefile	/^CC=g++$/;"	m
+C_TMS	include/libs.h	/^const double C_TMS = 42; \/\/ Timer Milliseconds$/;"	v
+Clear	include/sphere.h	/^        inline void Clear() {_q = NULL;}$/;"	f	class:GLIZ::Sphere
+CollisionManager	include/collision.h	/^        CollisionManager() {} \/\/ cannot instantiate$/;"	f	class:GLIZ::CollisionManager
+CollisionManager	include/collision.h	/^    class CollisionManager$/;"	c	namespace:GLIZ
+DistTo	include/dot.h	/^        double DistTo(Dot a) const {return sqrt((a.x-x)*(a.x-x)+(a.y-y)*(a.y-y)+(a.z-z)*(a.z-z));}$/;"	f	class:GLIZ::Dot
+Dot	include/dot.h	/^        Dot() : x(0), y(0), z(0) {}$/;"	f	class:GLIZ::Dot
+Dot	include/dot.h	/^        Dot(double x, double y){this->x=x, this->y=y, this->z=0;}$/;"	f	class:GLIZ::Dot
+Dot	include/dot.h	/^        Dot(double x, double y, double z) {this->x=x, this->y=y, this->z=z;}$/;"	f	class:GLIZ::Dot
+Dot	include/dot.h	/^    class Dot$/;"	c	namespace:GLIZ
+Draw	include/scene.h	/^        void Draw()$/;"	f	class:GLIZ::BaseScene
+Draw	include/ui.h	/^        void Draw()$/;"	f	class:GLIZ::UI
+Draw	include/universe.h	/^        void Draw()$/;"	f	class:GLIZ::IUniverse
+DrawGL	include/model.h	/^        void DrawGL()$/;"	f	class:GLIZ::Model
+DrawGL	include/quad.h	/^        void DrawGL()$/;"	f	class:GLIZ::Quad
+DrawGL	include/sphere.h	/^        void DrawGL()$/;"	f	class:GLIZ::Sphere
+Dt	include/timeline.h	/^        inline static Time Dt() {return TimeLine::Instance().GetDt();}$/;"	f	class:GLIZ::TimeLine
+Force	include/dot.h	/^    typedef Dot Force;$/;"	t	namespace:GLIZ
+GLIZ	include/ball.h	/^namespace GLIZ$/;"	n
+GLIZ	include/borders.h	/^namespace GLIZ$/;"	n
+GLIZ	include/collision.h	/^namespace GLIZ$/;"	n
+GLIZ	include/dot.h	/^namespace GLIZ$/;"	n
+GLIZ	include/ielement.h	/^namespace GLIZ$/;"	n
+GLIZ	include/iscene.h	/^namespace GLIZ$/;"	n
+GLIZ	include/model.h	/^namespace GLIZ$/;"	n
+GLIZ	include/object.h	/^namespace GLIZ$/;"	n
+GLIZ	include/quad.h	/^namespace GLIZ$/;"	n
+GLIZ	include/scene.h	/^namespace GLIZ$/;"	n
+GLIZ	include/sphere.h	/^namespace GLIZ$/;"	n
+GLIZ	include/timeline.h	/^namespace GLIZ$/;"	n
+GLIZ	include/ui.h	/^namespace GLIZ$/;"	n
+GLIZ	include/universe.h	/^namespace GLIZ$/;"	n
+GMove	include/model.h	/^        void GMove(Vec v)$/;"	f	class:GLIZ::Model
+GMove	include/quad.h	/^        void GMove(Vec v)$/;"	f	class:GLIZ::Quad
+GMove	include/sphere.h	/^        void GMove(Vec v)$/;"	f	class:GLIZ::Sphere
+Get	include/ui.h	/^        inline static UI& Get()$/;"	f	class:GLIZ::UI
+GetCurrentTime	include/timeline.h	/^        inline Time GetCurrentTime() \/\/ in msec$/;"	f	class:GLIZ::TimeLine
+GetDt	include/timeline.h	/^        inline Time GetDt()$/;"	f	class:GLIZ::TimeLine
+Glut_Draw	include/ui.h	/^        static void Glut_Draw()$/;"	f	class:GLIZ::UI
+Glut_Idle	include/ui.h	/^        static void Glut_Idle()$/;"	f	class:GLIZ::UI
+Glut_Mouse	include/ui.h	/^        static void Glut_Mouse(int button, int state, int x, int y)$/;"	f	class:GLIZ::UI
+Glut_Timer	include/ui.h	/^        static void Glut_Timer(int)$/;"	f	class:GLIZ::UI
+H	include/scene.h	/^        int W, H;$/;"	m	class:GLIZ::BaseScene
+IElement	include/ielement.h	/^    class IElement$/;"	c	namespace:GLIZ
+IScene	include/iscene.h	/^  class IScene$/;"	c	namespace:GLIZ
+IUniverse	include/universe.h	/^    class IUniverse$/;"	c	namespace:GLIZ
+Idle	include/ui.h	/^        void Idle()$/;"	f	class:GLIZ::UI
+Init	include/sphere.h	/^        inline void Init()$/;"	f	class:GLIZ::Sphere
+InitGL	src/main.cpp	/^void InitGL(int W, int H)$/;"	f
+Instance	include/timeline.h	/^        inline static TimeLine& Instance()$/;"	f	class:GLIZ::TimeLine
+Intersection	include/collision.h	/^        static inline bool Intersection(Line k, Sphere *s)$/;"	f	class:GLIZ::CollisionManager
+Line	include/dot.h	/^    typedef pair<Dot, Dot> Line;$/;"	t	namespace:GLIZ
+M	include/scene.h	/^        double cX, cY; double M;$/;"	m	class:GLIZ::Scene2d
+Model	include/model.h	/^        Model() {}$/;"	f	class:GLIZ::Model
+Model	include/model.h	/^    class Model : public IElement$/;"	c	namespace:GLIZ
+Mouse	include/ui.h	/^        void Mouse(int button, int state, int x, int y)$/;"	f	class:GLIZ::UI
+Movable	include/object.h	/^        bool Movable;$/;"	m	class:GLIZ::Object
+Move	include/object.h	/^        void Move(int dt) \/\/ milliseconds$/;"	f	class:GLIZ::Object
+MoveObjects	include/universe.h	/^        void MoveObjects()$/;"	f	class:GLIZ::MyUniverse
+MyUniverse	include/universe.h	/^        MyUniverse()$/;"	f	class:GLIZ::MyUniverse
+MyUniverse	include/universe.h	/^    class MyUniverse : public IUniverse, public CollisionManager$/;"	c	namespace:GLIZ
+Object	include/object.h	/^        Object() : m(1) {Movable = true;}$/;"	f	class:GLIZ::Object
+Object	include/object.h	/^    class Object$/;"	c	namespace:GLIZ
+OnClick	include/universe.h	/^        void OnClick(double x, double y)$/;"	f	class:GLIZ::MyUniverse
+OnMouse	include/scene.h	/^        void OnMouse(int button, int state, int X, int Y)$/;"	f	class:GLIZ::Scene2d
+OnMouseMove	include/scene.h	/^        void OnMouseMove(int X, int Y)$/;"	f	class:GLIZ::Scene2d
+OnSetViewport	include/scene.h	/^        void OnSetViewport(int viewportW, int viewportH)$/;"	f	class:GLIZ::Scene2d
+Quad	include/quad.h	/^        Quad()$/;"	f	class:GLIZ::Quad
+Quad	include/quad.h	/^        Quad(Dot a, Dot b, Dot c, Dot d) { this->a=a, this->b=b, this->c=c, this->d=d; }$/;"	f	class:GLIZ::Quad
+Quad	include/quad.h	/^    class Quad: public IElement$/;"	c	namespace:GLIZ
+React	include/ball.h	/^        void React()$/;"	f	class:GLIZ::Ball
+React	include/object.h	/^        virtual void React() {}$/;"	f	class:GLIZ::Object
+Read	include/borders.h	/^        void Read(istream& in) \/\/ TODO: # - walls; X - ball; O - loose$/;"	f	class:GLIZ::Borders
+Rectangle	include/quad.h	/^        Rectangle(Dot a, Dot b) : Quad(a,Dot(b.x,a.y),b,Dot(a.x,b.y)) {}$/;"	f	class:GLIZ::Rectangle
+Rectangle	include/quad.h	/^    class Rectangle: public Quad$/;"	c	namespace:GLIZ
+Reflect	include/dot.h	/^    inline Vec Reflect(const Vec& l, const Line& line)$/;"	f	namespace:GLIZ
+ReflectLine	include/collision.h	/^        inline static Line* ReflectLine(Sphere* s, Quad* q, bool onlyEdge = false$/;"	f	class:GLIZ::CollisionManager
+ResizeUI	src/main.cpp	/^void ResizeUI(int W, int H)$/;"	f
+Scene2d	include/scene.h	/^        Scene2d()$/;"	f	class:GLIZ::Scene2d
+Scene2d	include/scene.h	/^        Scene2d(double cX, double cY, double M): cX(this->cX),cY(this->cY),M(this->M)$/;"	f	class:GLIZ::Scene2d
+Scene2d	include/scene.h	/^    class Scene2d: public BaseScene$/;"	c	namespace:GLIZ
+SetLocation	include/scene.h	/^        void SetLocation(int left, int bottom, int width, int height)$/;"	f	class:GLIZ::BaseScene
+SetProjection	include/scene.h	/^        void SetProjection(){}$/;"	f	class:GLIZ::Scene2d
+SetUniverse	include/scene.h	/^        void SetUniverse(IUniverse* universe)$/;"	f	class:GLIZ::BaseScene
+SetViewport	include/ui.h	/^        void SetViewport(int Width, int Height)$/;"	f	class:GLIZ::UI
+Sphere	include/sphere.h	/^        Sphere()$/;"	f	class:GLIZ::Sphere
+Sphere	include/sphere.h	/^        Sphere(double x, double y, double z, double r) {c.x=x, c.y=y, c.z=z; slices=stacks=20; this->r=r; Clear();}$/;"	f	class:GLIZ::Sphere
+Sphere	include/sphere.h	/^    class Sphere: public IElement$/;"	c	namespace:GLIZ
+Start	include/timeline.h	/^        inline void Start() { t = 0; ticks = 0; started = true; } \/\/ if we start from 0$/;"	f	class:GLIZ::TimeLine
+Stop	include/timeline.h	/^        inline void Stop() { started = false; }$/;"	f	class:GLIZ::TimeLine
+Time	include/timeline.h	/^        typedef long long unsigned int Time;$/;"	t	class:GLIZ::TimeLine
+TimeLine	include/timeline.h	/^        TimeLine() : t(0), ticks(0), started(false) { Start(); }$/;"	f	class:GLIZ::TimeLine
+TimeLine	include/timeline.h	/^    class TimeLine$/;"	c	namespace:GLIZ
+ToModel	include/borders.h	/^        void ToModel()$/;"	f	class:GLIZ::Borders
+ToSeconds	include/timeline.h	/^        inline static double ToSeconds() { return 1.0\/1000; }$/;"	f	class:GLIZ::TimeLine
+UI	include/ui.h	/^        UI()$/;"	f	class:GLIZ::UI
+UI	include/ui.h	/^    class UI$/;"	c	namespace:GLIZ
+Vec	include/dot.h	/^    typedef Dot Vec;$/;"	t	namespace:GLIZ
+W	include/scene.h	/^        int W, H;$/;"	m	class:GLIZ::BaseScene
+X0	include/scene.h	/^        int X0, Y0;$/;"	m	class:GLIZ::BaseScene
+Y0	include/scene.h	/^        int X0, Y0;$/;"	m	class:GLIZ::BaseScene
+_Inited	include/sphere.h	/^        inline bool _Inited() {return _q;}$/;"	f	class:GLIZ::Sphere
+_q	include/sphere.h	/^        GLUquadric* _q;$/;"	m	class:GLIZ::Sphere
+_scenes	include/ui.h	/^        vector<IScene*> _scenes;$/;"	m	class:GLIZ::UI
+a	include/object.h	/^        Vec a = Dot(0,0,0); \/\/ accelaration$/;"	m	class:GLIZ::Object
+a	include/quad.h	/^        Dot a, b, c, d;$/;"	m	class:GLIZ::Quad
+b	include/quad.h	/^        Dot a, b, c, d;$/;"	m	class:GLIZ::Quad
+ball	include/universe.h	/^        inline Ball& ball()$/;"	f	class:GLIZ::MyUniverse
+borders	include/universe.h	/^        inline Borders& borders()$/;"	f	class:GLIZ::MyUniverse
+br	include/borders.h	/^        double br;$/;"	m	class:GLIZ::Borders
+c	include/quad.h	/^        Dot a, b, c, d;$/;"	m	class:GLIZ::Quad
+c	include/sphere.h	/^        Dot c; \/\/ center$/;"	m	class:GLIZ::Sphere
+cX	include/scene.h	/^        double cX, cY; double M;$/;"	m	class:GLIZ::Scene2d
+cY	include/scene.h	/^        double cX, cY; double M;$/;"	m	class:GLIZ::Scene2d
+commonSectionCircle	include/collision.h	/^        bool commonSectionCircle(Line k, Sphere *s)$/;"	f	class:GLIZ::CollisionManager
+d	include/quad.h	/^        Dot a, b, c, d;$/;"	m	class:GLIZ::Quad
+element	include/object.h	/^        IElement *element; \/\/ graphical element$/;"	m	class:GLIZ::Object
+elements	include/model.h	/^        vector<IElement*> elements;$/;"	m	class:GLIZ::Model
+f	include/object.h	/^        vector<Force> f; \/\/ force$/;"	m	class:GLIZ::Object
+h	include/borders.h	/^        int w, h;$/;"	m	class:GLIZ::Borders
+l	include/borders.h	/^        Dot s; Dot l;$/;"	m	class:GLIZ::Borders
+m	include/object.h	/^        double m;$/;"	m	class:GLIZ::Object
+main	src/main.cpp	/^int main(int argc, char **argv)$/;"	f
+model	include/borders.h	/^        inline Model& model()$/;"	f	class:GLIZ::Borders
+normal	include/dot.h	/^    inline Vec normal(const Line& line)$/;"	f	namespace:GLIZ
+normalize	include/dot.h	/^        Dot normalize(const double k = 1) const { double m = k\/DistTo(Dot(0,0)); return Dot(x,y,z)*m; } \/\/ only for Vec$/;"	f	class:GLIZ::Dot
+objects	include/universe.h	/^        vector<Object*> objects;$/;"	m	class:GLIZ::IUniverse
+operator !=	include/dot.h	/^        bool operator!=(const Dot& b) const {return !((x==b.x)&&(y==b.y)&&(z==b.z));}$/;"	f	class:GLIZ::Dot
+operator *	include/dot.h	/^        Dot operator*(double m) const {return Dot(x*m,y*m,z*m);}$/;"	f	class:GLIZ::Dot
+operator *	include/dot.h	/^        double operator*(const Dot&b) const {return x*b.x+y*b.y+z*b.z;} \/\/ only for Vec$/;"	f	class:GLIZ::Dot
+operator +	include/dot.h	/^        Dot operator+(const Dot& b) const {return Dot(x+b.x, y+b.y, z+b.z);}$/;"	f	class:GLIZ::Dot
+operator -	include/dot.h	/^        Dot operator-(const Dot& b) const {return Dot(this->x,this->y,this->z)+b*(-1);}$/;"	f	class:GLIZ::Dot
+operator <<	include/dot.h	/^    inline ostream& operator<<(ostream& os, const Dot& d)$/;"	f	namespace:GLIZ
+operator <<	include/ielement.h	/^    inline ostream& operator<<(ostream& os, const IElement& d)$/;"	f	namespace:GLIZ
+operator <<	include/model.h	/^    inline ostream& operator<<(ostream& os, const Model& m)$/;"	f	namespace:GLIZ
+operator <<	include/quad.h	/^    inline ostream& operator<<(ostream& os, const Quad& d)$/;"	f	namespace:GLIZ
+operator <<	include/sphere.h	/^    inline ostream& operator<<(ostream& os, const Sphere& m)$/;"	f	namespace:GLIZ
+operator ==	include/dot.h	/^        bool operator==(const Dot& b) const {return (x==b.x)&&(y==b.y)&&(z==b.z);}$/;"	f	class:GLIZ::Dot
+quad	include/borders.h	/^        inline Quad& quad(int i)$/;"	f	class:GLIZ::Borders
+r	include/sphere.h	/^        double r; \/\/ radius$/;"	m	class:GLIZ::Sphere
+s	include/borders.h	/^        Dot s; Dot l;$/;"	m	class:GLIZ::Borders
+slices	include/sphere.h	/^        int slices, stacks;$/;"	m	class:GLIZ::Sphere
+sphere	include/ball.h	/^        inline Sphere& sphere()$/;"	f	class:GLIZ::Ball
+stacks	include/sphere.h	/^        int slices, stacks;$/;"	m	class:GLIZ::Sphere
+started	include/timeline.h	/^        bool started;$/;"	m	class:GLIZ::TimeLine
+t	include/timeline.h	/^        Time t;$/;"	m	class:GLIZ::TimeLine
+ticks	include/timeline.h	/^        clock_t ticks;$/;"	m	class:GLIZ::TimeLine
+universe	include/scene.h	/^        IUniverse* universe;$/;"	m	class:GLIZ::BaseScene
+universe	src/main.cpp	/^MyUniverse universe;$/;"	v
+v	include/object.h	/^        Vec v = Dot(0,0,0); \/\/ velocity$/;"	m	class:GLIZ::Object
+w	include/borders.h	/^        int w, h;$/;"	m	class:GLIZ::Borders
+walls	include/borders.h	/^        vector<vector<bool> > walls;$/;"	m	class:GLIZ::Borders
+window	src/main.cpp	/^int window;$/;"	v
+x	include/dot.h	/^        double x, y, z;$/;"	m	class:GLIZ::Dot
+y	include/dot.h	/^        double x, y, z;$/;"	m	class:GLIZ::Dot
+z	include/dot.h	/^        double x, y, z;$/;"	m	class:GLIZ::Dot
+~MyUniverse	include/universe.h	/^        ~MyUniverse() {}$/;"	f	class:GLIZ::MyUniverse
+~Object	include/object.h	/^        ~Object() {}$/;"	f	class:GLIZ::Object
+~Sphere	include/sphere.h	/^        ~Sphere() {if(_q) gluDeleteQuadric(_q);}$/;"	f	class:GLIZ::Sphere
+~UI	include/ui.h	/^        ~UI()$/;"	f	class:GLIZ::UI
