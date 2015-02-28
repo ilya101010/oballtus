@@ -1,0 +1,17 @@
+include/ball.h
+include/borders.h
+include/collision.h
+include/dot.h
+include/ielement.h
+include/imodel.h
+include/iscene.h
+include/libs.h
+include/model.h
+include/object.h
+include/quad.h
+include/scene.h
+include/sphere.h
+include/timeline.h
+include/ui.h
+include/universe.h
+src/main.cpp
