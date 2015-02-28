@@ -6,6 +6,8 @@
 #include "ball.h"
 #include "borders.h"
 #include "timeline.h"
+#include "text.h"
+
 namespace GLIZ
 {
     class IUniverse

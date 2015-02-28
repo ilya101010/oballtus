@@ -14,5 +14,6 @@ namespace GLIZ
     virtual void OnSetViewport(int viewportW, int viewportH) = 0;
     virtual void OnMouseMove(int X, int Y) = 0;
     virtual void OnMouse(int button, int state, int X, int Y) = 0;
+    virtual void OnKeyboard(unsigned char key, int x, int y) = 0;
   };
 } // GLIZ

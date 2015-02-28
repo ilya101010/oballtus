@@ -34,6 +34,12 @@ namespace GLIZ
         }
         void Read(istream& in) // TODO: # - walls; X - ball; O - loose
         {
+            if(!in)
+            {
+                w=h=0;
+                br=0.02;
+                return;
+            }
             in>>w>>h;
             in>>br;
             walls.resize(h); for(int i = 0; i<h; i++) walls[i].resize(w, false);

@@ -21,23 +21,24 @@ namespace GLIZ
         {
             this->universe=universe;
         }
-        void Draw()
-        {
-            if(universe) universe->Draw();
-        }
     };
 
     class Scene2d: public BaseScene
     {
         double cX, cY; double M;
+        bool play, drawable;
     public:
         Scene2d()
         {
+            drawable = true;
+            play = true;
             cX=cY=0;
             M=1;
         }
         Scene2d(double cX, double cY, double M): cX(this->cX),cY(this->cY),M(this->M)
         {
+            drawable = true;
+            play = true;
         }
         void SetProjection(){}
         void OnSetViewport(int viewportW, int viewportH)
@@ -49,8 +50,9 @@ namespace GLIZ
 
         void Animate()
         {
-            universe->MoveObjects();
+            if(play) universe->MoveObjects();
         }
+
         void OnMouseMove(int X, int Y)
         {
 
@@ -61,6 +63,77 @@ namespace GLIZ
             double x=(1.0*X)/W, y=(1.0*Y)/H;
             if(button == GLUT_LEFT_BUTTON && state == GLUT_UP)
                 universe->OnClick(-1+2*x,-1+2*(1-y));
+        }
+
+        void OnKeyboard(unsigned char key, int x, int y)
+        {
+            if(key == 'p' || key == 'P')
+            {
+                play = !play;
+            }
+        }
+        void Draw()
+        {
+            if(universe) universe->Draw();
+        }
+    };
+    class EditScene: public BaseScene
+    {
+    public:
+        double cX, cY; double M;
+        bool play, drawable;
+    public:
+        EditScene()
+        {
+            drawable = false;
+            play = false;
+            cX=cY=0;
+            M=1;
+        }
+        EditScene(double cX, double cY, double M): cX(this->cX),cY(this->cY),M(this->M)
+        {
+            drawable = false;
+            play = false;
+        }
+        void SetProjection(){}
+        void OnSetViewport(int viewportW, int viewportH)
+        {
+            W=viewportW; H=viewportH;
+            double sY = M*H, sX = M*W;
+            gluOrtho2D(-1/M,1/M,-1/M,1/M);
+        }
+
+        void Animate()
+        {
+            if(play) universe->MoveObjects();
+        }
+
+        void OnMouseMove(int X, int Y)
+        {
+
+        }
+
+        void OnMouse(int button, int state, int X, int Y)
+        {
+            double x=(1.0*X)/W, y=(1.0*Y)/H;
+            if(button == GLUT_LEFT_BUTTON && state == GLUT_UP)
+                universe->OnClick(-1+2*x,-1+2*(1-y));
+        }
+
+        void OnKeyboard(unsigned char key, int x, int y)
+        {
+            if(key == 'e' || key == 'E')
+            {
+                drawable = !drawable; play = !play;
+            }
+        }
+        void Draw()
+        {
+            if(!drawable) return;
+
+            TextEl a("EditScene"); a.DrawGL();
+            //cout << "Draw! ";
+            if(universe) universe->Draw();
         }
     };
 }

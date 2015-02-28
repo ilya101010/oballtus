@@ -11,8 +11,10 @@ namespace GLIZ
     public:
         UI()
         {
-            IScene* scene; scene = new Scene2d();
-            _scenes.push_back(scene);
+            IScene* scene2d; scene2d = new Scene2d();
+            IScene* editscene; editscene = new EditScene();
+            _scenes.push_back(scene2d);
+            _scenes.push_back(editscene);
         }
 
         ~UI()
@@ -80,6 +82,15 @@ namespace GLIZ
             }
         }
 
+        void Keyboard(unsigned char key, int x, int y)
+        {
+            for(int i = 0; i<_scenes.size(); i++)
+            {
+                IScene* scene = _scenes[i];
+                if(scene) scene->OnKeyboard(key,x,y);
+            }
+        }
+
         static void Glut_Draw()
         {
           Get().Draw();
@@ -98,6 +109,10 @@ namespace GLIZ
         static void Glut_Timer(int)
         {
             Get().Idle();
+        }
+        static void Glut_Keyboard(unsigned char key, int x, int y)
+        {
+            return Get().Keyboard(key, x, y);
         }
     };
 } // GLIZ
