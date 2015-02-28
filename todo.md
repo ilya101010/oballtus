@@ -1,7 +1,11 @@
 # To do
 - [x] Fix Windows support for FreeGlut (!)
+- [ ] Fix temporary EditScene demo (wrong universe) (!)
+- [ ] Curves!
+	- [ ] Mouse creation: movements -> curve
+		- [ ] Editing?
+	- [ ] Collisions
 - [ ] Bruteforce ball kicks for looses
 - [ ] Additional collisions
 	- [ ] Ball-Ball
 	- [ ] Quad-Quad (?)
-
