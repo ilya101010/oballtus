@@ -1,5 +1,6 @@
 #pragma once
 #include "libs.h"
+#include "object.h"
 
 namespace GLIZ
 {
@@ -18,7 +19,7 @@ namespace GLIZ
         TextEl(string value): text(value)
         {
             font = GLUT_BITMAP_HELVETICA_18;
-            c = Dot(0,0);
+            c = Dot(-0.9,0.9);
         }
         void DrawGL()
         {
@@ -31,4 +32,15 @@ namespace GLIZ
             c=c+v;
         }
     };
+/*
+    class TextObj: public Object
+    {
+    public:
+
+        TextObj()
+        {
+            TextEl title;
+            element=
+        }
+    } */
 }

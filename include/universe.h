@@ -21,63 +21,23 @@ namespace GLIZ
 
         void Draw()
         {
+
+            glEnable(GL_BLEND);
+            glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
             for(int i = 0; i<objects.size(); i++)
+            {
+                glColor4f(1,1,1,1);
                 if(objects[i]) objects[i]->element->DrawGL();
+            }
         }
 
         virtual void MoveObjects()=0;
         virtual void OnClick(double x, double y)=0;
     };
-    /*
-    class Universe :
-    {
-    public:
-        vector<Object*> objects;
-        Universe(){}
-        ~Universe(){}
-
-        void Add(Object* obj)
-        {
-            objects.push_back(obj);
-        }
-
-        void MoveObjects()
-        {
-            //TimeLine::Time
-            int dt = C_TMS;
-            if (!dt) return;
-
-            // 1. Movements
-
-            for(int i = 0; i<objects.size(); i++)
-                objects[i]->Move(dt);
-
-            // 2. Collisions
-
-            
-
-            // 3. Appear / Disappear
-
-            // 4. React
-
-
-            for(int i = 0; i<objects.size(); i++)
-                objects[i]->React();
-            //
-            /*
-            colisMgr.SearchCollisions(objects);
-            for(int i = 0; i<objects.size(); i++)
-                objects[i]->React();
-
-        }
-    };
-    */
 
     class MyUniverse : public IUniverse, public CollisionManager
     {
     public:
-
-
         inline Borders& borders()
         {
             return *(static_cast<Borders*>(objects[1]));
@@ -139,6 +99,33 @@ namespace GLIZ
             // reacting things (just do nothing!)
             for(int i = 0; i<objects.size(); i++)
                 objects[i]->React();
+        }
+    };
+
+    class EditUniverse : public IUniverse
+    {
+    public:
+        EditUniverse()
+        {
+            Object *bg = new Object();
+                Quad *q = new Quad();
+                q->a=q->a*4; q->b=q->b*4; q->c=q->c*4; q->d=q->d*4;
+                q->bl=1; q->r=rand(); q->g=0.5;
+                bg->element=q;
+            Add(bg);
+            Object *tt = new Object();
+                TextEl *t = new TextEl("EditScene"); tt->element=t;
+            Add(tt);
+        }
+        ~EditUniverse() {}
+
+        void OnClick(double x, double y)
+        {
+        }
+
+        void MoveObjects()
+        {
+
         }
     };
 }

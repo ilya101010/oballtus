@@ -130,9 +130,6 @@ namespace GLIZ
         void Draw()
         {
             if(!drawable) return;
-
-            TextEl a("EditScene"); a.DrawGL();
-            //cout << "Draw! ";
             if(universe) universe->Draw();
         }
     };

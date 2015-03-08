@@ -30,12 +30,12 @@ namespace GLIZ
         void DrawGL()
         {
             Init();
-            glColor3f(1,1,1);
             glPushMatrix();
             {
                 glTranslated(c.x,c.y,c.z);
                 gluSphere(_q,r,slices,stacks);
             }
+            //glEnd();
             glPopMatrix();
         }
         void GMove(Vec v)
