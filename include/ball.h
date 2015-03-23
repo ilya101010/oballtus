@@ -8,16 +8,16 @@ namespace GLIZ
     class Ball: public Object
     {
     public:
+        inline Sphere& sphere()
+        {
+            return *(static_cast<Sphere*>(element));
+        }
         Ball()
         {
             //f.push_back(Force(0.5,0.25,0));
             v = Vec(0,0);
-            element=new Sphere();
+            element=new Sphere(0,0,1,0.5);
             //m = 10;
-        }
-        inline Sphere& sphere()
-        {
-            return *(static_cast<Sphere*>(element));
         }
         void React()
         {

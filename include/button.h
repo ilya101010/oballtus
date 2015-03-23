@@ -1,5 +1,16 @@
-#ifndef BUTTON_H
-#define BUTTON_H
+#pragma once
+#include "libs.h"
+#include "quad.h"
+#include "object.h"
 
-#endif // BUTTON_H
+namespace GLIZ
+{
+    class Button: public Object
+    {
+        TextEl element;
+        Button()
+        {
 
+        }
+    }
+}

@@ -12,7 +12,7 @@ namespace GLIZ
         GLfloat r,g,bl,al;
         Quad()
         {r=1;g=0.25;bl=0.25; al=0.5; a = Dot(-0.25,0.25);b=Dot(0.25,0.25);c=Dot(0.25,-0.25);d=Dot(-0.25,-0.25);}
-        Quad(Dot a, Dot b, Dot c, Dot d) { r=1;g=0.25;bl=0.25; al=0.5; a = Dot(-0.25,0.25);this->a=a, this->b=b, this->c=c, this->d=d; }
+        Quad(Dot a, Dot b, Dot c, Dot d) { r=1;g=0.25;bl=0.25; al=1; this->a=a, this->b=b, this->c=c, this->d=d; }
         void DrawGL()
         {
             glBegin(GL_QUADS);

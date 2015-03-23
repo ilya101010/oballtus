@@ -35,8 +35,7 @@ namespace GLIZ
         }
 
 
-        inline static Line* ReflectLine(Sphere* s, Quad* q, bool onlyEdge = false
-                ) // return reflection line (new reference)
+        inline static Line* ReflectLine(Sphere* s, Quad* q, bool onlyEdge = false) // return reflection line (new reference)
         {
             // data
             Dot a = q->a;

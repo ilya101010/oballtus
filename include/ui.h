@@ -12,9 +12,7 @@ namespace GLIZ
         UI()
         {
             IScene* scene2d; scene2d = new Scene2d();
-            IScene* editscene; editscene = new EditScene();
             _scenes.push_back(scene2d);
-            _scenes.push_back(editscene);
         }
 
         ~UI()
@@ -51,8 +49,8 @@ namespace GLIZ
 
         void Draw()
         {
-            glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
             glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+            glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
             for(int i = 0; i<_scenes.size(); i++)
             {
                 IScene* scene = _scenes[i];

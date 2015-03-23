@@ -4,6 +4,7 @@
 #include "object.h"
 #include "model.h"
 #include "quad.h"
+#include "line.h"
 
 namespace GLIZ
 {
@@ -26,7 +27,7 @@ namespace GLIZ
                 {
                     if(walls[y][x])
                     {
-                        IElement* a = new Rectangle(Dot(-1+2.0*x/w,-1+2.0*y/h),Dot(-1+2.0*(x+1)/w,-1+2.0*(y+1)/h));
+                        IElement* a = new Rectangle(Dot(-1+2.0*x/w,-1+2.0*y/h,0),Dot(-1+2.0*(x+1)/w,-1+2.0*(y+1)/h,0));
                         model().elements.push_back(a);
                     }
                 }
@@ -65,28 +66,33 @@ namespace GLIZ
 
     };
 
-    /*
-    class CollisionManager()
+    class PolyChain: public Object
     {
-        void SearchCollisions(vector<Object>& objects)
+        vector<Line> lines;
+        inline Model& model()
         {
-            vector<Object>::size_type n = objects.size();
-            //
-            for (int i = 0; i < n; i++)
-            {
-                object& A = objects[i];
-                if (!A.Static)
-                    for (int j = 0; j < n; j++)
-                        if (i != j)
-                        {
-                            object& B = objects[j];
-                            //
-                            // testing collision...
-                            //
-                            A.MarkCollision();
-                        }
-            }
+            return *(static_cast<Model*>(element));
         }
-    }
-    */
+        void AddLine(Line a)
+        {
+            LineEl *t = new LineEl(a);
+            model().elements.push_back(t);
+        }
+        inline void AddDot(Dot a)
+        {
+            AddLine(Line(lines.back().second, a));
+        }
+        PolyChain(vector<Line> lines)
+        {
+            element = new Model();
+            for(vector<Line>::iterator i = lines.begin(); i != lines.end(); i++)
+                AddLine(*i);
+        }
+        PolyChain(vector<Dot> dots)
+        {
+            AddLine(Line(dots[0],dots[1]));
+            for (int i = 2; i<dots.size(); i++)
+                AddDot(dots[i]);
+        }
+    };
 }
