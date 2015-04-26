@@ -13,6 +13,7 @@
 #include <time.h>
 
 // GL
+#include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/glut.h>
@@ -23,4 +24,4 @@ using namespace std;
 // Defines
 
 // Constants
-const double C_TMS = 42; // Timer Milliseconds
+const double C_TMS = 17; // Timer Milliseconds

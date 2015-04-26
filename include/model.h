@@ -25,7 +25,7 @@ namespace GLIZ
     {
         os << "model (" << m.elements.size() <<" elements) {" << endl;
         for(int i = 0; i<m.elements.size(); i++)
-            os << m.elements[i] << endl;
+            os << *m.elements[i] << endl;
         os << "}";
     }
 }

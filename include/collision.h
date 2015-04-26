@@ -34,7 +34,6 @@ namespace GLIZ
             return false;
         }
 
-
         inline static Line* ReflectLine(Sphere* s, Quad* q, bool onlyEdge = false) // return reflection line (new reference)
         {
             // data

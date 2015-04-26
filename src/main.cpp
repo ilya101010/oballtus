@@ -11,7 +11,6 @@ using namespace GLIZ;
 int window;
 
 MyUniverse universe;
-EditUniverse edit;
 
 void ResizeUI(int W, int H)
 {
@@ -33,12 +32,11 @@ void InitGL(int W, int H)
 int main(int argc, char **argv)
 {
     UI::Get().AttachUniverse(0,&universe);
-    UI::Get().AttachUniverse(1,&edit);
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB);
     glutInitWindowSize(640, 480);
     glutInitWindowPosition(0, 0);
-    window = glutCreateWindow("Oballtuss by ilya101010");
+    window = glutCreateWindow("Oballtus by ilya101010");
     glutDisplayFunc(&UI::Glut_Draw);
     glutTimerFunc(C_TMS,&UI::Glut_Timer,0);
     glutMouseFunc(&UI::Glut_Mouse);
