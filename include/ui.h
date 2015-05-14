@@ -2,12 +2,14 @@
 #include "libs.h"
 #include "iscene.h"
 #include "scene.h"
+//#include "shader.h"
 
 namespace GLIZ
 {
     class UI
     {
         vector<IScene*> _scenes;
+        //ShaderProgram* shaderProgram;
     public:
         UI()
         {
@@ -51,12 +53,38 @@ namespace GLIZ
         {
             glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
             glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+
+            //glUseProgram(shaderProgram->ID);
+
             for(int i = 0; i<_scenes.size(); i++)
             {
                 IScene* scene = _scenes[i];
                 if(scene) scene->Draw();
             }
             glutSwapBuffers();
+        }
+
+        inline static void ResizeUI(int W, int H)
+        {
+            if(H==0) H=1;
+            UI::Get().SetViewport(W,H);
+        }
+
+        void InitGL(int W, int H)
+        {
+            glClearColor(0.0f,0.0f,0.0f,0.0f);
+            glClearDepth(1.0); // def - 1.0
+            glDepthFunc(GL_LESS); // def - GL_LESS
+            glEnable(GL_DEPTH_TEST);
+            glShadeModel(GL_SMOOTH);
+            ResizeUI(W, H);
+            // TODO: shaders
+            /*
+            cout << "InitGL: before shaders";
+            shaderProgram = new ShaderProgram("shaders/in");
+            shaderProgram->AddShader(GL_VERTEX_SHADER);
+            shaderProgram->Create();
+             */
         }
 
         void Idle()

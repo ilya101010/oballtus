@@ -32,28 +32,29 @@ namespace GLIZ
             c=c+v;
         }
     };
-    // TODO: implement FreeType
-    /*class TextEl2: public IElement
+    /*
+    class Font
     {
-        FT_Library ft;
     public:
-        FT_Face face;
-        TextEl2()
+        FTFont* font;
+        Font(string ttf, int size)
         {
-            drawable=true;
-            FT_Error e;
-            e = FT_Init_FreeType(&ft); if(e) cout << "Error: init";
-            e = FT_New_Face(ft, "/home/ilya101010/ClionProjects/oballtus/Terminus.ttf", 0, &face); if(e) cout << "Error: FT_NEW_FACE";
-            e = FT_Set_Char_Size(face, 0, 16*64, 300, 300); if(e) cout << "Error: FT_Set_Char_Size";
-            e = FT_Load_Glyph(face,FT_Get_Char_Index(face, 'A'),FT_LOAD_DEFAULT); if(e) cout << "Error: FT_Load_Glyph";
+            font = new FTGLBitmapFont(ttf.c_str());
+            if(!font->FaceSize(size))
+            {
+                cout << "ERROR: Text->FaceSize" << endl;
+                exit(1);
+            }
+            font->Depth(1.0);
+            font->CharMap(ft_encoding_unicode);
         }
-        void DrawGL()
+        void Render(Dot c, string text)
         {
-            FT_Render_Glyph(face->glyph,FT_RENDER_MODE_NORMAL);
+            glPushMatrix();
+                glTranslatef(c.x,c.y,-1);
+                font->Render(text.c_str());
+            glPopMatrix();
         }
-        void GMove(Vec v)
-        {
-
-        }
+        void GMove() {}
     };*/
 }

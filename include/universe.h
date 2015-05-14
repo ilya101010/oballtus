@@ -8,6 +8,7 @@
 #include "timeline.h"
 #include "text.h"
 #include "line.h"
+#include "arrow.h"
 
 namespace GLIZ
 {
@@ -22,6 +23,11 @@ namespace GLIZ
 
         void Draw()
         {
+            /*
+            Font* a = new Font("/home/ilya101010/ClionProjects/oballtus/Terminus.ttf",20);
+            glColor3f(1.0f,1.0f,1.0f);
+            a->Render(Dot(200,200), "Hello World");
+            */
             glEnable(GL_BLEND);
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
             for(int i = 0; i<objects.size(); i++)
@@ -29,6 +35,7 @@ namespace GLIZ
                 glColor4f(1,1,1,1);
                 if(objects[i] && objects[i]->element->drawable) objects[i]->element->DrawGL();
             }
+
         }
 
         virtual void MoveObjects()=0;
@@ -228,25 +235,33 @@ namespace GLIZ
         {
             return *(static_cast<Quad*>(model().elements[i]));
         }
+        inline Arrow& arrow()
+        {
+            return *(static_cast<Arrow*>(objects[4]->element));
+        }
         MyUniverse()
         {
-            Object *oball = new Ball(); Add(oball); ball().sphere().r = 0.01;
-            Object *walls = new Object(); walls->element=new Model(); Add(walls);
+            Object *oball = new Ball(); Add(oball); ball().sphere().r = 0.01; // 0
+            Object *walls = new Object(); walls->element=new Model(); Add(walls); // 1
             tmp = Quad(Dot(NULL,NULL),Dot(NULL,NULL),Dot(NULL,NULL),Dot(NULL,NULL));
+            /*
             Object *bg = new Object();
                 Quad *q = new Quad(); q->drawable=false;
                 q->a = Dot(-1,1,-1);q->b=Dot(1,1,-1);q->c=Dot(1,-1,-1);q->d=Dot(-1,-1,-1);
                 q->bl=1; q->r=0.75; q->g=0.5; q->al=0.5;
                 bg->element=q;
                 Add(bg); // 2
+            */
              Object *maint = new Object(); Model *editText = new Model();
                 TextEl *t0 = new TextEl("Editing mode"); editText->elements.push_back(t0);
                 TextEl *t1 = new TextEl("[d] - enter dot-mode"); t1->c.y=t0->c.y-0.05; editText->elements.push_back(t1); t1->font=GLUT_BITMAP_HELVETICA_12;
                 TextEl *t2 = new TextEl("[s] - enter settings"); t2->c.y=t1->c.y-0.03; editText->elements.push_back(t2); t2->font=GLUT_BITMAP_HELVETICA_12;
                 TextEl *t3 = new TextEl("[o] - output to model.oba"); t3->c.y=t2->c.y-0.03; editText->elements.push_back(t3); t3->font=GLUT_BITMAP_HELVETICA_12;
-            maint->element=editText; maint->element->drawable=false; Add(maint); // 3
-            Object *dott = new Object(); TextEl *dotText = new TextEl("Dot-mode"); dott->element=dotText; dott->element->drawable=false; Add(dott); // 4
-            //Object *demo = new Object(); TextEl2 *demon = new TextEl2(); demo->element=demon; Add(demo);
+            maint->element=editText; maint->element->drawable=false; Add(maint); // 2
+            Object *dott = new Object(); TextEl *dotText = new TextEl("Dot-mode"); dott->element=dotText; dott->element->drawable=false; Add(dott); // 3
+            Object *arrow = new Object(); Arrow* arrow1 = new Arrow(ball().sphere().c,ball().sphere().c,1); arrow->element=arrow1;
+                Add(arrow);// 4
+
         }
         ~MyUniverse() {}
 
@@ -293,13 +308,18 @@ namespace GLIZ
 
         void OnKeyboard(unsigned char key, int x, int y)
         {
-            if(!editmode) // none
+            if(key == 'f' || key == 'F')
+            {
+                cout << "fix";
+                ball().element->drawable=true;
+            }
+            else if(!editmode) // none
             {
                 if(key == 'E' || key == 'e') // turn on edit-mode
                 {
                     editmode=true;
                     objects[2]->element->drawable=true;
-                    objects[3]->element->drawable=true;
+                    objects[3]->element->drawable=false;
                 }
             }
             else if (editmode && S < DOT) // edit-mode
@@ -307,14 +327,14 @@ namespace GLIZ
                 if(key == 'E' || key == 'e') // exit
                 {
                     editmode = false;
+                    //objects[2]->element->drawable=false;
                     objects[2]->element->drawable=false;
-                    objects[3]->element->drawable=false;
                 }
                 else if (key == 'd' || key == 'D') // enter dot-mode
                 {
                     S = DOT;
-                    objects[3]->element->drawable=false;
-                    objects[4]->element->drawable=true;
+                    objects[2]->element->drawable=false;
+                    objects[3]->element->drawable=true;
                 }
                 else if (key == 's' || key == 'S') // enter setting-mode
                 {
@@ -331,8 +351,8 @@ namespace GLIZ
                 if (key == 'd' || key == 'D') // exit
                 {
                     S = EDIT;
-                    objects[3]->element->drawable=true;
-                    objects[4]->element->drawable=false;
+                    objects[2]->element->drawable=true;
+                    objects[3]->element->drawable=false;
                 }
             }
         }
@@ -356,7 +376,10 @@ namespace GLIZ
                 }
                 for (int i = 0; i < objects.size(); i++)
                     objects[i]->React();
+                arrow().a=ball().sphere().c;
+                arrow().b=ball().sphere().c+(ball().v)*5;
             }
+            ball().element->drawable=true;
         }
     };
 }
