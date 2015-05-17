@@ -241,7 +241,7 @@ namespace GLIZ
         }
         MyUniverse()
         {
-            Object *oball = new Ball(); Add(oball); ball().sphere().r = 0.01; // 0
+            Object *oball = new Ball(); Add(oball); ball().sphere().r = 0.01; ball().sphere().c.z=0; // 0
             Object *walls = new Object(); walls->element=new Model(); Add(walls); // 1
             tmp = Quad(Dot(NULL,NULL),Dot(NULL,NULL),Dot(NULL,NULL),Dot(NULL,NULL));
             /*
@@ -380,6 +380,7 @@ namespace GLIZ
                 arrow().b=ball().sphere().c+(ball().v)*5;
             }
             ball().element->drawable=true;
+            if ((rand() % 30 == 0)) cout << ball().sphere().c.z << endl;
         }
     };
 }
